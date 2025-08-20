@@ -9,13 +9,13 @@ This repository was created as a personal learning project to solidify my unders
 
 ## Key Skills:
 
-- Selenium WebDriver: Automating browser interactions.
+- **Selenium WebDriver**: Automating browser interactions.
 
-- Java: Writing test logic and code.
+- **Java**: Writing test logic and code.
 
-- Page Object Model (POM): A design pattern for maintainable and scalable test code.
+- **Page Object Model (POM)**: A design pattern for maintainable and scalable test code.
 
-- Test Automation Fundamentals: Understanding how to write effective, reliable tests.
+- **Test Automation Fundamentals**: Understanding how to write effective, reliable tests.
 
 
 ## Getting Started
@@ -34,7 +34,7 @@ This repository was created as a personal learning project to solidify my unders
 
   Navigate to the project directory.
 
-  Build the project and run tests using Maven: mvn clean install
+  Build the project and run tests using Maven: `mvn clean install`
 
 ## Repository Structure
 `src/main/java/pages`: This is where the Page Object classes are located. Thanks to the Test Automation University course i learned that it is considered a good practice to create a class for eache page when using the POM pattern, so in order to improve the readability of the structure i decided to create subpackages here for tests (such as `login` and `forgotpassword`) for example that open multiple pages for things like confirmation messages, et cetera.
