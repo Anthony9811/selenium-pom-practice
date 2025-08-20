@@ -56,7 +56,7 @@ Objective: Automate a dropdown menu to select multiple options using a data prov
 
 Concepts: Data-driven testing, handling dropdown elements (`Select` class), and working with data providers.
 
-### Exercise 3: Forgot Password Worlkflow
+### Exercise 3: Forgot Password Workflow
 
 Objective: Validate the "Forgot Password" functionality by submitting an email and verifying the resulting message.
 
