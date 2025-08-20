@@ -37,11 +37,11 @@ This repository was created as a personal learning project to solidify my unders
   Build the project and run tests using Maven: `mvn clean install`
 
 ## Repository Structure
-`src/main/java/pages`: This is where the Page Object classes are located. Thanks to the Test Automation University course i learned that it is considered a good practice to create a class for eache page when using the POM pattern, so in order to improve the readability of the structure i decided to create subpackages here for tests (such as `login` and `forgotpassword`) for example that open multiple pages for things like confirmation messages, et cetera.
+* `src/main/java/pages`: This is where the Page Object classes are located. Thanks to the Test Automation University course i learned that it is considered a good practice to create a class for eache page when using the POM pattern, so in order to improve the readability of the structure i decided to create subpackages here for tests (such as `login` and `forgotpassword`) for example that open multiple pages for things like confirmation messages, et cetera.
 
-`src/test/java/`: Contains the actual test cases (@Test methods) and test suites.
+* `src/test/java/`: Contains the actual test cases (@Test methods) and test suites.
 
-`pom.xml`: - The Maven project configuration file, listing all dependencies (like Selenium and TestNG).
+* `pom.xml`: - The Maven project configuration file, listing all dependencies (like Selenium and TestNG).
 
 ## Key Concepts & Exercises
 
