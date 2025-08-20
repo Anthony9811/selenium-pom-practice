@@ -62,4 +62,7 @@ Objective: Validate the "Forgot Password" functionality by submitting an email a
 
 Concepts: Element interaction, text validation, and handling a basic user flow.
 
-***Note: This test can not be successfully completed at the moment due to an "Internal Server Error" message appearing on the site. According to the course's assignment we are supposed to be redirected to a new page containing a confirmation message that reads “Your e-mail's been sent!”, however, since this is not the case and i have no way to know the element's css selector, id or xpath i've decided to instead test that the "Internal Server Error" message is appearing on screen until it gets fixed, which is why the test passes. This will not only avoid the `NoSuchElement` exception, but i will also be able to know when it gets fixed once the test fails.***
+***Note: This test can not be successfully completed at the moment due to an "Internal Server Error" message appearing on the site. According to the course's assignment we are supposed to be redirected to a new page containing a confirmation message that reads “Your e-mail's been sent!”, however, since this is not the case and i have no way to know the element's css selector, id or xpath i've decided to instead test that the "Internal Server Error" message is appearing on screen until it gets fixed, which is why the test passes. This will not only avoid the `NoSuchElementException`, but i will also be able to know when it gets fixed once the test fails.***
+
+## Course Credits
+Some of the exercises in this repository are based on homework assignments from the Test Automation University course **Selenium WebDriver with Java**.
