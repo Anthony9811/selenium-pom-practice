@@ -29,19 +29,7 @@ public class DropdownTests extends BaseTests {
     public void testDropdownSelection(String optionText) {
         dropdownPage.selectOptionByText(optionText);
         String selectedOption = dropdownPage.getSelectedOptionText();
-        Assert.assertEquals(selectedOption, optionText, "The selected option is different than "+ optionText);
-        /*
-        This was my initial approach before doing some research:
-
-        DropdownPage dropdownPage = homePage.clickOnDropdown();
-        dropdownPage.selectOptionByText("Option 1");
-
-        selectedOption = dropdownPage.getSelectedOptionText();
-        Assert.assertEquals(selectedOption,"Option 1","The selected option is not Option 1");
-
-        dropdownPage.selectOptionByText("Option 2");
-        selectedOption = dropdownPage.getSelectedOptionText();
-        Assert.assertEquals(selectedOption,"Option 2","The selected option is not Option 2");
-        */
+        Assert.assertEquals(selectedOption, optionText,
+                "The selected option is different than "+ optionText);
     }
 }
