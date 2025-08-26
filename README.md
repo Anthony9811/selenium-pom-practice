@@ -76,5 +76,11 @@ Objective: Automate a test on the "Key Presses" page to verify that the correct 
 
 Concepts: Simulating keyboard events, sending special keys (`Keys` class), and text validation.
 
+### Exercise 6: Horizontal Slider
+
+Objective: Automate the horizontal slider to move it to a specific value and verify the displayed number.
+
+Concepts: Simulating keyboard events (`Keys` class), sending arrow keys, and numeric value validation.
+
 ## Course Credits
 Some of the exercises in this repository are based on homework assignments from the Test Automation University course **Selenium WebDriver with Java**.
