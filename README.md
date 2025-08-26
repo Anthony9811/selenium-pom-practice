@@ -82,5 +82,11 @@ Objective: Automate the horizontal slider to move it to a specific value and ver
 
 Concepts: Simulating keyboard events (`Keys` class), sending arrow keys, and numeric value validation.
 
+### Exercise 7: Javascript Alerts
+
+Objective: Automate and interact with different types of JavaScript alerts (Alert, Confirm, and Prompt) and verify the results.
+
+Concepts: Handling JavaScript pop-ups (`Alert` class), `accept`, `dismiss`, and sending text to a prompt.
+
 ## Course Credits
 Some of the exercises in this repository are based on homework assignments from the Test Automation University course **Selenium WebDriver with Java**.
