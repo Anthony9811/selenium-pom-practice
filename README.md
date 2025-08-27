@@ -88,5 +88,11 @@ Objective: Automate and interact with different types of JavaScript alerts (Aler
 
 Concepts: Handling JavaScript pop-ups (`Alert` class), `accept`, `dismiss`, and sending text to a prompt.
 
+### Exercise 8: File Upload
+
+Objective: Automate the process of uploading a file and verifying that the upload was successful.
+
+Concepts: Interacting with file input elements, using `sendKeys` and the `File` class to specify a file path, and text validation.
+
 ## Course Credits
 Some of the exercises in this repository are based on homework assignments from the Test Automation University course **Selenium WebDriver with Java**.
