@@ -60,4 +60,9 @@ public class HomePage {
         clickLink("File Upload");
         return new FileUploadPage(driver);
     }
+
+    public ModalPage clickOnModalPage() {
+        clickLink("Entry Ad");
+        return new ModalPage(driver);
+    }
 }
