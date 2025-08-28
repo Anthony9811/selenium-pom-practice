@@ -100,5 +100,11 @@ Objective: Automate the dismissal of a modal dialog box that appears upon page l
 
 Concepts: Handling unexpected pop-ups, interacting with modal dialogs, and dynamic wait conditions.
 
+### Exercise 10: Context Menu
+
+Objective: Automate a right-click action on the page's hot spot and verify the text of the resulting JavaScript alert.
+
+Concepts: Simulating right-clicks (`Actions` class), handling JavaScript alerts, and text validation.
+
 ## Course Credits
 Some of the exercises in this repository are based on homework assignments from the Test Automation University course **Selenium WebDriver with Java**.
