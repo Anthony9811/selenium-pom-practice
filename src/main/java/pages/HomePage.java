@@ -65,4 +65,9 @@ public class HomePage {
         clickLink("Entry Ad");
         return new ModalPage(driver);
     }
+
+    public ContextMenuPage clickOnContextMenu() {
+        clickLink("Context Menu");
+        return new ContextMenuPage(driver);
+    }
 }
