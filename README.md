@@ -94,5 +94,11 @@ Objective: Automate the process of uploading a file and verifying that the uploa
 
 Concepts: Interacting with file input elements, using `sendKeys` and the `File` class to specify a file path, and text validation.
 
+### Exercise 9: Modal
+
+Objective: Automate the dismissal of a modal dialog box that appears upon page load and verify the page state afterward.
+
+Concepts: Handling unexpected pop-ups, interacting with modal dialogs, and dynamic wait conditions.
+
 ## Course Credits
 Some of the exercises in this repository are based on homework assignments from the Test Automation University course **Selenium WebDriver with Java**.
