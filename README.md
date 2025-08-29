@@ -106,5 +106,15 @@ Objective: Automate a right-click action on the page's hot spot and verify the t
 
 Concepts: Simulating right-clicks (`Actions` class), handling JavaScript alerts, and text validation.
 
+### Exercise 11: Nested Frames
+
+Objective: Navigate to the "Nested Frames" page, switch to the `left` and `bottom` frames, and verify that the text inside each frame is "LEFT" and "BOTTOM" respectively, all within a single test case.
+
+Concepts: Working with nested iframes (`switchTo().frame()`), locating frames by name or index, and text validation.
+
+The assigned exercise for this task was to:
+
+***"Go to the-internet page and click on the Frames link. Then click on the Nested Frames link and verify two of these frames. The two that I would like for you to verify is the left frame and then also the bottom frame, but do these both inside of one test. So, your test should click to this page, and then verify that the text inside of this particular frame says "Left" and that the text inside of this particular frame says "Bottom"."***
+
 ## Course Credits
 Some of the exercises in this repository are based on homework assignments from the Test Automation University course **Selenium WebDriver with Java**.

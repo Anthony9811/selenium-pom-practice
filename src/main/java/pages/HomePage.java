@@ -7,6 +7,7 @@ package pages;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import pages.forgotpassword.ForgotPasswordPage;
+import pages.frames.FramesPage;
 import pages.login.LoginPage;
 
 public class HomePage {
@@ -69,5 +70,10 @@ public class HomePage {
     public ContextMenuPage clickOnContextMenu() {
         clickLink("Context Menu");
         return new ContextMenuPage(driver);
+    }
+
+    public FramesPage clickOnFrames() {
+        clickLink("Frames");
+        return new FramesPage(driver);
     }
 }
