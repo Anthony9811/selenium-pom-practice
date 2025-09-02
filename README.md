@@ -128,5 +128,14 @@ Objective: Automate tests for two JavaScript-heavy pages. For "Infinite Scroll,"
 
 Concepts: Executing JavaScript (`JavascriptExecutor`), simulating scroll events, locating elements within complex page structures, and handling dynamically loaded content.
 
+
+### Exercise 14: Multi-Select Dropdown
+
+Objective: Modified the dropdown page to select multiple options. This test first uses JavaScript to enable multi-select on the element, then selects the options from a data set and verifies them.
+
+Concepts: Executing JavaScript (`JavascriptExecutor`), modifying element attributes on the fly, using `ArrayList` for data handling, and working with data providers.
+
+***The specific assignment for this exercise can be read [here](https://testautomationu.applitools.com/selenium-webdriver-tutorial-java/chapter10.html).***
+
 ## Course Credits
 Some of the exercises in this repository are based on homework assignments from the Test Automation University course **Selenium WebDriver with Java**.
