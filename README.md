@@ -122,5 +122,11 @@ Concepts: Explicit waits (`WebDriverWait`), waiting for element visibility, and 
 
 ***The specific assignment solved for this exercise can be read [here](https://testautomationu.applitools.com/selenium-webdriver-tutorial-java/chapter9.html)***
 
+### Exercise 13: Using JavaScript
+
+Objective: Automate tests for two JavaScript-heavy pages. For "Infinite Scroll," the goal is to verify that content loads dynamically as the page is scrolled. For "Large & Deep DOM," the objective is to locate and interact with a deeply nested element within a complex DOM structure.
+
+Concepts: Executing JavaScript (`JavascriptExecutor`), simulating scroll events, locating elements within complex page structures, and handling dynamically loaded content.
+
 ## Course Credits
 Some of the exercises in this repository are based on homework assignments from the Test Automation University course **Selenium WebDriver with Java**.
