@@ -114,7 +114,7 @@ Concepts: Working with nested iframes (`switchTo().frame()`), locating frames by
 
 ***The solved exercise assigned for this task can be read [here](https://testautomationu.applitools.com/selenium-webdriver-tutorial-java/chapter8.html)***
 
-### Exercise 11: Dynamic Loading
+### Exercise 12: Dynamic Loading
 
 Objective: Automate tests for both dynamic loading examples, focusing on waiting for elements to become either visible or present in the DOM after a page load event.
 
