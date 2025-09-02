@@ -30,7 +30,7 @@ This repository was created as a personal learning project to solidify my unders
 
  ### Setup Instructions:
 
-  Clone the repository: git clone https://github.com/Anthony9811/selenium-pom-practice.git
+  Clone the repository: `git clone https://github.com/Anthony9811/selenium-pom-practice.git`
 
   Navigate to the project directory.
 
@@ -62,7 +62,7 @@ Objective: Validate the "Forgot Password" functionality by submitting an email a
 
 Concepts: Element interaction, text validation, and handling a basic user flow.
 
-***Note: This test can not be successfully completed at the moment due to an "Internal Server Error" message appearing on the site. According to the course's assignment we are supposed to be redirected to a new page containing a confirmation message that reads “Your e-mail's been sent!”, however, since this is not the case and i have no way to know the element's css selector, id or xpath i've decided to instead test that the "Internal Server Error" message is appearing on screen until it gets fixed, which is why the test passes. This will not only avoid the `NoSuchElementException`, but i will also be able to know when it gets fixed once the test fails.***
+***Note: This test can not be successfully completed at the moment due to an "Internal Server Error" message appearing on the site. According to the course's assignment (which you can read [here](https://testautomationu.applitools.com/selenium-webdriver-tutorial-java/chapter4.3.html)) we are supposed to be redirected to a new page containing a confirmation message that reads “Your e-mail's been sent!”, however, since this is not the case and i have no way to know the element's css selector, id or xpath i've decided to instead test that the "Internal Server Error" message is appearing on screen until it gets fixed, which is why the test passes. This will not only avoid the `NoSuchElementException`, but i will also be able to know when it gets fixed once the test fails.***
 
 ### Exercise 4: Hovers Page Interaction
 
@@ -112,9 +112,15 @@ Objective: Navigate to the "Nested Frames" page, switch to the `left` and `botto
 
 Concepts: Working with nested iframes (`switchTo().frame()`), locating frames by name or index, and text validation.
 
-The assigned exercise for this task was to:
+***The solved exercise assigned for this task can be read [here](https://testautomationu.applitools.com/selenium-webdriver-tutorial-java/chapter8.html)***
 
-***"Go to the-internet page and click on the Frames link. Then click on the Nested Frames link and verify two of these frames. The two that I would like for you to verify is the left frame and then also the bottom frame, but do these both inside of one test. So, your test should click to this page, and then verify that the text inside of this particular frame says "Left" and that the text inside of this particular frame says "Bottom"."***
+### Exercise 11: Dynamic Loading
+
+Objective: Automate tests for both dynamic loading examples, focusing on waiting for elements to become either visible or present in the DOM after a page load event.
+
+Concepts: Explicit waits (`WebDriverWait`), waiting for element visibility, and waiting for an element's presence in the DOM.
+
+***The specific assignment solved for this exercise can be read [here](https://testautomationu.applitools.com/selenium-webdriver-tutorial-java/chapter9.html)***
 
 ## Course Credits
 Some of the exercises in this repository are based on homework assignments from the Test Automation University course **Selenium WebDriver with Java**.

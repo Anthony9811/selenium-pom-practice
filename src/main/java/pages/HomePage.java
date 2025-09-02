@@ -6,6 +6,7 @@ package pages;
 
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
+import pages.wait.DynamicLoadingPage;
 import pages.forgotpassword.ForgotPasswordPage;
 import pages.frames.FramesPage;
 import pages.login.LoginPage;
@@ -75,5 +76,10 @@ public class HomePage {
     public FramesPage clickOnFrames() {
         clickLink("Frames");
         return new FramesPage(driver);
+    }
+
+    public DynamicLoadingPage clickOnDynamicLoading() {
+        clickLink("Dynamic Loading");
+        return new DynamicLoadingPage(driver);
     }
 }
