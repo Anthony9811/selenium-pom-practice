@@ -17,6 +17,6 @@ public class EmailSentPage {
     an "Internal Server Error" showing up when clicking the "Retrieve Password" button,
     so it will be tested using that error message until it gets fixed
         */
-        return driver.findElement(By.xpath("/html/body/h1")).getText();
+        return driver.findElement(By.tagName("h1")).getText();
     }
 }
