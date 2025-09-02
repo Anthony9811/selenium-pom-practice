@@ -2,20 +2,12 @@ package dropdown;
 
 import base.BaseTests;
 import org.testng.Assert;
-import org.testng.annotations.BeforeClass;
 import org.testng.annotations.DataProvider;
 import org.testng.annotations.Test;
 import pages.DropdownPage;
 
 public class DropdownTests extends BaseTests {
     DropdownPage dropdownPage;
-
-    @BeforeClass
-    public void navigateToDropdownPage() {
-        // This method runs AFTER BaseTests.setUp() but BEFORE any @Test methods.
-        // It uses the 'homePage' object that was initialized in the base class.
-        dropdownPage = homePage.clickOnDropdown();
-    }
 
     @DataProvider(name = "dropdownOptions")
     private Object[][] getDropdownOptions() {
@@ -27,6 +19,7 @@ public class DropdownTests extends BaseTests {
 
     @Test(dataProvider = "dropdownOptions")
     public void testDropdownSelection(String optionText) {
+        dropdownPage = homePage.clickOnDropdown();
         dropdownPage.selectOptionByText(optionText);
         String selectedOption = dropdownPage.getSelectedOptionText();
         Assert.assertEquals(selectedOption, optionText,
