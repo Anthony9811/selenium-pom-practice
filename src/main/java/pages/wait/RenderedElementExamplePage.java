@@ -18,7 +18,7 @@ public class RenderedElementExamplePage {
         this.wait = new WebDriverWait(driver, Duration.ofSeconds(10));
     }
 
-    public boolean checkIfTextIsVisible() {
+    public boolean isTextVisible() {
         try {
             wait.until(ExpectedConditions.visibilityOfElementLocated(loadedText));
             return true;
@@ -27,9 +27,13 @@ public class RenderedElementExamplePage {
         }
     }
 
+    public boolean isStartButtonPresent() {
+        return driver.findElement(startButton).isDisplayed();
+    }
+
     public void clickStart() {
         driver.findElement(startButton).click();
-        checkIfTextIsVisible();
+        isTextVisible();
     }
 
     public String getLoadedText() {

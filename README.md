@@ -143,5 +143,14 @@ Objective: Automate the process of clicking a link that opens a new window, then
 
 Concepts: Handling multiple browser windows, switching between windows (`switchTo().window())`, and managing window handles.
 
+
+### Exercise 16: Dynamic Loading (New Tab)
+
+Objective: Go to the Dynamic Loading page, right-click on "Example 2," open it in a new tab, and then switch to that new tab to verify the presence of the "Start" button.
+
+Concepts: Simulating right-click actions (`Actions` class), handling multiple tabs, and waiting for element visibility.
+
+The assignment for this exercise can be read [here](https://testautomationu.applitools.com/selenium-webdriver-tutorial-java/chapter11.html)
+
 ## Course Credits
 Some of the exercises in this repository are based on homework assignments from the Test Automation University course **Selenium WebDriver with Java**.
