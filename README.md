@@ -137,5 +137,11 @@ Concepts: Executing JavaScript (`JavascriptExecutor`), modifying element attribu
 
 ***The specific assignment for this exercise can be read [here](https://testautomationu.applitools.com/selenium-webdriver-tutorial-java/chapter10.html).***
 
+### Exercise 15: Multiple Windows
+
+Objective: Automate the process of clicking a link that opens a new window, then switch the automation's focus to the new window to perform a validation.
+
+Concepts: Handling multiple browser windows, switching between windows (`switchTo().window())`, and managing window handles.
+
 ## Course Credits
 Some of the exercises in this repository are based on homework assignments from the Test Automation University course **Selenium WebDriver with Java**.
