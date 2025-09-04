@@ -152,5 +152,11 @@ Concepts: Simulating right-click actions (`Actions` class), handling multiple ta
 
 The assignment for this exercise can be read [here](https://testautomationu.applitools.com/selenium-webdriver-tutorial-java/chapter11.html)
 
+## Test Reporting & Utility Features
+
+This section highlights key framework functionalities that improve test reliability and reporting.
+
+- **Screenshot on Failure:** The framework is configured to automatically capture a screenshot whenever a test fails. This provides a clear, visual snapshot of the application's state at the moment of failure, which is invaluable for debugging and root-cause analysis. This functionality is implemented using a custom `TestNG` listener.
+
 ## Course Credits
 Some of the exercises in this repository are based on homework assignments from the Test Automation University course **Selenium WebDriver with Java**.
