@@ -2,7 +2,6 @@ package utils;
 
 import org.openqa.selenium.WebDriver;
 
-import java.util.List;
 import java.util.Set;
 
 public class WindowManager {
@@ -34,7 +33,7 @@ public class WindowManager {
         return driver.getWindowHandles();
     }
 
-    public void switchToTab(String tabTitle) {
+    public void switchToASpecificTab(String tabTitle) {
         getAllWindowHandles();
         for (String handle : getAllWindowHandles()) {
             driver.switchTo().window(handle);

@@ -19,7 +19,7 @@ public class NavigationTests extends BaseTests {
     @Test
     public void testSwitchTab() {
         homePage.clickOnMultipleWindows().clickHere();
-        getWindowManager().switchToTab("New Window");
+        getWindowManager().switchToASpecificTab("New Window");
     }
 
     @Test
