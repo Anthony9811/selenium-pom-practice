@@ -18,22 +18,13 @@ public class RenderedElementExamplePage {
         this.wait = new WebDriverWait(driver, Duration.ofSeconds(10));
     }
 
-    public boolean isTextVisible() {
-        try {
-            wait.until(ExpectedConditions.visibilityOfElementLocated(loadedText));
-            return true;
-        } catch (org.openqa.selenium.TimeoutException e) {
-            return false;
-        }
-    }
-
     public boolean isStartButtonPresent() {
         return driver.findElement(startButton).isDisplayed();
     }
 
     public void clickStart() {
         driver.findElement(startButton).click();
-        isTextVisible();
+        wait.until(ExpectedConditions.visibilityOfElementLocated(loadedText));
     }
 
     public String getLoadedText() {
