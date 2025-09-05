@@ -37,7 +37,7 @@ This repository was created as a personal learning project to solidify my unders
   Build the project and run tests using Maven: `mvn clean install`
 
 ## Repository Structure
-* `src/main/java/pages`: This is where the Page Object classes are located. Thanks to the Test Automation University course i learned that it is considered a good practice to create a class for each page when using the POM pattern, so in order to improve the readability of the structure i decided to create subpackages here for tests (such as `login` and `forgotpassword`) that open multiple pages for things like confirmation messages, et cetera.
+* `src/main/java/pages`: This is where the Page Object classes are located. Thanks to the Test Automation University course i learned that it is considered a good practice to create a class for each page when using the POM pattern, so in order to improve the readability of the structure i decided to create subpackages here for tests (such as `login` and `forgotpassword`) that open multiple pages for things like confirmation messages and others.
 
 * `src/test/java/`: Contains the actual test cases (`@Test` methods) and test suites.
 
@@ -62,7 +62,7 @@ Objective: Validate the "Forgot Password" functionality by submitting an email a
 
 Concepts: Element interaction, text validation, and handling a basic user flow.
 
-***Note: This test can not be successfully completed at the moment due to an "Internal Server Error" message appearing on the site. According to the course's assignment (which you can read [here](https://testautomationu.applitools.com/selenium-webdriver-tutorial-java/chapter4.3.html)) we are supposed to be redirected to a new page containing a confirmation message that reads “Your e-mail's been sent!”, however, since this is not the case and i have no way to know the element's css selector, id or xpath i've decided to instead test that the "Internal Server Error" message is appearing on screen until it gets fixed, which is why the test passes. This will not only avoid the `NoSuchElementException`, but i will also be able to know when it gets fixed once the test fails.***
+***Note: This test cannot be successfully completed at the moment due to an "Internal Server Error" message appearing on the site. According to the course's assignment (which you can read [here](https://testautomationu.applitools.com/selenium-webdriver-tutorial-java/chapter4.3.html)) we are supposed to be redirected to a new page containing a confirmation message that reads “Your e-mail's been sent!”, however, since this is not the case and i have no way to know the element's css selector, id or xpath i've decided to instead test that the "Internal Server Error" message is appearing on screen until it gets fixed, which is why the test passes. This will not only avoid the `NoSuchElementException`, but i will also be able to know when it gets fixed once the test fails.***
 
 ### Exercise 4: Hovers Page Interaction
 
