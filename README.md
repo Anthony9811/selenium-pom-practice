@@ -156,7 +156,8 @@ The assignment for this exercise can be read [here](https://testautomationu.appl
 
 This section highlights key framework functionalities that improve test reliability and reporting.
 
-- **Screenshot on Failure:** The framework is configured to automatically capture a screenshot whenever a test fails. This provides a clear, visual snapshot of the application's state at the moment of failure, which is invaluable for debugging and root-cause analysis. This functionality is implemented using a custom `TestNG` listener.
+- **Comprehensive Screenshot Capture:** The framework now includes a dedicated `ScreenshotHelper` class that captures screenshots for all test outcomes: pass, fail, and skip. This provides a complete visual log of the test run, which is invaluable for debugging, auditing, and generating clear reports.
+- **ExtentReports Integration:** This project now includes integration with ExtentReports to generate rich, interactive HTML reports for every test execution. The reports provide detailed information on test results, helping to quickly identify and analyze failures. 
 
 ## Course Credits
 Some of the exercises in this repository are based on homework assignments from the Test Automation University course **Selenium WebDriver with Java**.
