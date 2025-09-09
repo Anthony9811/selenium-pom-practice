@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="The Internet HerokuApp Suite">
+    <test verbose="2" preserve-order="true" name="C:/Users/ajort/IdeaProjects/selenium-pom-practice/src/test/java">
+        <classes>
+            <class name="alerts.AlertsTests">
+                <methods>
+                    <include name="testAcceptAlert"/>
+                    <include name="testGetTextFromAlert"/>
+                    <include name="testSetInput"/>
+                </methods>
+            </class>
+            <class name="base.BaseTests">
+                <methods>
+                    <include name="setUp"/>
+                </methods>
+            </class>
+            <class name="contextmenu.ContextMenuTests">
+                <methods>
+                    <include name="testContextMenu"/>
+                </methods>
+            </class>
+            <class name="dropdown.DropdownTests">
+                <methods>
+                    <include name="testDropdownSelection"/>
+                    <include name="testMultiSelect"/>
+                </methods>
+            </class>
+            <class name="fileupload.FileUploadTests">
+                <methods>
+                    <include name="testFileUpload"/>
+                </methods>
+            </class>
+            <class name="forgotpassword.ForgotPasswordTests">
+                <methods>
+                    <include name="testPasswordRecovery"/>
+                </methods>
+            </class>
+            <class name="horizontalslider.HorizontalSliderTests">
+                <methods>
+                    <include name="testHorizontalSlider"/>
+                </methods>
+            </class>
+            <class name="hovers.HoversTests">
+                <methods>
+                    <include name="testHoverOnUsers"/>
+                </methods>
+            </class>
+            <class name="javascript.JavaScriptTests">
+                <methods>
+                    <include name="tesScrollToTable"/>
+                    <include name="testScrollToFifthParagraph"/>
+                </methods>
+            </class>
+            <class name="keypresses.KeyPressesTests">
+                <methods>
+                    <include name="testKeyInput"/>
+                </methods>
+            </class>
+            <class name="login.LoginTests">
+                <methods>
+                    <include name="testSuccessfulLogin"/>
+                </methods>
+            </class>
+            <class name="modal.ModalTests">
+                <methods>
+                    <include name="testModalWindow"/>
+                </methods>
+            </class>
+            <class name="navigation.NavigationTests">
+                <methods>
+                    <include name="testNavigator"/>
+                    <include name="testSwitchTab"/>
+                    <include name="testSwitchToDynamicLoadingExampleTwo"/>
+                </methods>
+            </class>
+            <class name="nestedframes.NestedFramesTests">
+                <methods>
+                    <include name="testNestedFrames"/>
+                </methods>
+            </class>
+            <class name="wait.WaitTests">
+                <methods>
+                    <include name="testWaitUntilHidden"/>
+                    <include name="testWaitUntilRendered"/>
+                </methods>
+            </class>
+        </classes>
+    </test>
+</suite>
