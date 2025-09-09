@@ -3,6 +3,7 @@ package base;
 import com.aventstack.extentreports.ExtentReports;
 import com.aventstack.extentreports.ExtentTest;
 import com.aventstack.extentreports.Status;
+import java.nio.file.Files;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.testng.ITestResult;
@@ -12,6 +13,11 @@ import utils.ExtentManager;
 import utils.ScreenshotHelper;
 import utils.WindowManager;
 
+import java.io.IOException;
+import java.nio.file.Path;
+import java.nio.file.Paths;
+import java.util.Comparator;
+import java.util.stream.Stream;
 
 public class BaseTests {
 
@@ -24,13 +30,18 @@ public class BaseTests {
     public void setUp(){
         driver = new ChromeDriver();
         goToHomePage();
-
+        initializeReport();
         homePage = new HomePage(driver);
     }
 
     @BeforeSuite
     public void initializeReport() {
         report = ExtentManager.getInstance();
+        try {
+            cleanOldScreenshots();
+        } catch (IOException e) {
+            throw new RuntimeException(e);
+        }
     }
 
     @BeforeMethod
@@ -74,6 +85,35 @@ public class BaseTests {
 
     private void attachScreenshot(String testName) {
         String screenshotPath = ScreenshotHelper.takeAScreenshot(driver, testName);
-        reportLogger.addScreenCaptureFromPath(screenshotPath);
+        Path reportDirectory = Paths.get(System.getProperty("user.dir"), "test-output");
+        Path screenshotFile = Paths.get(screenshotPath);
+
+        String relativePath = reportDirectory.relativize(screenshotFile).toString();
+        reportLogger.addScreenCaptureFromPath(relativePath);
+    }
+
+    private void cleanOldScreenshots() throws IOException {
+        Path screenshotsRoot = Paths.get(System.getProperty("user.dir"), "test-output", "screenshots");
+
+        if (Files.exists(screenshotsRoot)) {
+            // Walks through every file and folder under the screenshots directory
+            try (Stream<Path> allPaths = Files.walk(screenshotsRoot)) {
+                allPaths
+                        // Ignores the root folder
+                        .filter(path -> path.equals(screenshotsRoot))
+
+                        // Sort so that the deepest files/folders are deleted first
+                        .sorted(Comparator.comparingInt((Path path) -> path.getNameCount()).reversed())
+
+                        // Delete each file or folder
+                        .forEach(currentPath -> {
+                            try {
+                                Files.deleteIfExists(currentPath);
+                            } catch (IOException e) {
+                                System.err.println("Could not delete: " + currentPath + " -> " + e.getMessage());
+                            }
+                        });
+                }
+            }
     }
 }

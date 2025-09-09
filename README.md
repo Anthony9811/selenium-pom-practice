@@ -7,6 +7,14 @@ A project dedicated to learning and practicing automation testing with Selenium 
 This repository was created as a personal learning project to solidify my understanding of modern test automation principles. It focuses on hands-on exercises and practical implementations rather than theoretical concepts.
 
 
+## Project Configuration
+
+This project uses **Maven** for dependency management and **TestNG** for the testing framework.
+
+- `pom.xml:` Manages project dependencies and build lifecycle.
+
+- `testng.xml:` A TestNG suite file that allows for organized test execution. This file is used to run tests from the command line, configure test groups, and manage the parallel execution of tests, showcasing a structured approach to test automation.
+
 ## Key Skills:
 
 - **Selenium WebDriver**: Automating browser interactions.
@@ -156,8 +164,8 @@ The assignment for this exercise can be read [here](https://testautomationu.appl
 
 This section highlights key framework functionalities that improve test reliability and reporting.
 
-- **Comprehensive Screenshot Capture:** The framework now includes a dedicated `ScreenshotHelper` class that captures screenshots for all test outcomes: pass, fail, and skip. This provides a complete visual log of the test run, which is invaluable for debugging, auditing, and generating clear reports.
+- **Enhanced Screenshot Capture:** The framework now features a robust screenshot utility that captures a visual snapshot of the page for every test outcome: pass, fail, and skip. All screenshots are dynamically named after the test method that generated them, providing a clear and organized visual record of the entire test run, which is invaluable for debugging and report generation.
 - **ExtentReports Integration:** This project now includes integration with ExtentReports to generate rich, interactive HTML reports for every test execution. The reports provide detailed information on test results, helping to quickly identify and analyze failures. 
-
+- **Report Fixes & Cleanup:** The framework was updated to ensure that all captured screenshots now correctly appear within the ExtentReports HTML report. A new feature was also added to automatically clean up screenshots from previous runs, preventing a buildup of files in the project directory.
 ## Course Credits
 Some of the exercises in this repository are based on homework assignments from the Test Automation University course **Selenium WebDriver with Java**.
