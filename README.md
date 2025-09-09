@@ -38,11 +38,20 @@ This project uses **Maven** for dependency management and **TestNG** for the tes
 
  ### Setup Instructions:
 
-  Clone the repository: `git clone https://github.com/Anthony9811/selenium-pom-practice.git`
+ 1. Clone the repository: `git clone https://github.com/Anthony9811/selenium-pom-practice.git`
 
-  Navigate to the project directory.
+ 2. Navigate to the project directory.
 
-  Build the project and run tests using Maven: `mvn clean install`
+ 3. Run the Tests:
+
+You have a few options for running the tests:
+
+- **From the command line (Maven):**
+Use the following command to run all tests in the project:
+`mvn clean test`
+
+- **Using the TestNG Suite:**
+Open the project in your IDE _(preferably IntelliJ IDEA)_ and right-click on the `testng.xml` file. Select the "Run" option to execute the entire test suite.
 
 ## Repository Structure
 * `src/main/java/pages`: This is where the Page Object classes are located. Thanks to the Test Automation University course i learned that it is considered a good practice to create a class for each page when using the POM pattern, so in order to improve the readability of the structure i decided to create subpackages here for tests (such as `login` and `forgotpassword`) that open multiple pages for things like confirmation messages and others.
@@ -165,7 +174,7 @@ The assignment for this exercise can be read [here](https://testautomationu.appl
 This section highlights key framework functionalities that improve test reliability and reporting.
 
 - **Enhanced Screenshot Capture:** The framework now features a robust screenshot utility that captures a visual snapshot of the page for every test outcome: pass, fail, and skip. All screenshots are dynamically named after the test method that generated them, providing a clear and organized visual record of the entire test run, which is invaluable for debugging and report generation.
-- **ExtentReports Integration:** This project now includes integration with ExtentReports to generate rich, interactive HTML reports for every test execution. The reports provide detailed information on test results, helping to quickly identify and analyze failures. 
+- **ExtentReports Integration:** This project now includes integration with ExtentReports to generate rich, interactive HTML reports for every test execution. The reports provide detailed information on test results, helping to quickly identify and analyze failures. **After running the tests, the final report named `TestsReport.html` can be found in the `test-output` folder.** 
 - **Report Fixes & Cleanup:** The framework was updated to ensure that all captured screenshots now correctly appear within the ExtentReports HTML report. A new feature was also added to automatically clean up screenshots from previous runs, preventing a buildup of files in the project directory.
 ## Course Credits
 Some of the exercises in this repository are based on homework assignments from the Test Automation University course **Selenium WebDriver with Java**.
