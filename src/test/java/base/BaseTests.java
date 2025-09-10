@@ -56,7 +56,6 @@ public class BaseTests {
 
     @AfterMethod
     public void recordTestResult(ITestResult testResult) {
-        reportLogger = report.createTest(testResult.getName());
         switch (testResult.getStatus()) {
             case ITestResult.FAILURE:
                 reportLogger.log(Status.FAIL, "Test Failed: " + testResult.getThrowable());
@@ -99,14 +98,9 @@ public class BaseTests {
             // Walks through every file and folder under the screenshots directory
             try (Stream<Path> allPaths = Files.walk(screenshotsRoot)) {
                 allPaths
-                        // Ignores the root folder
-                        .filter(path -> path.equals(screenshotsRoot))
-
-                        // Sort so that the deepest files/folders are deleted first
-                        .sorted(Comparator.comparingInt((Path path) -> path.getNameCount()).reversed())
-
-                        // Delete each file or folder
-                        .forEach(currentPath -> {
+                        .filter(path -> path.equals(screenshotsRoot)) // Ignores the root folder
+                        .sorted(Comparator.comparingInt(Path::getNameCount).reversed()) // Sort so that the deepest files/folders are deleted first
+                        .forEach(currentPath -> { // Deletes each file or folder
                             try {
                                 Files.deleteIfExists(currentPath);
                             } catch (IOException e) {
