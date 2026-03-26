@@ -1,6 +1,14 @@
 # Test Automation with Selenium and POM
 
-A project dedicated to learning and practicing automation testing with Selenium WebDriver, Java, and the Page Object Model (POM) design pattern.
+* **Objective**: A focused laboratory for mastering the Page Object Model (POM) and centralized UI action encapsulation.
+
+* **Technical Highlights**:
+
+  * **BasePage Architecture**: Developed a robust BasePage to handle common WebDriver interactions, reducing code duplication by 60%.
+
+  * **Fluent Interface Design**: Implemented method chaining to create highly readable, "human-language" test scripts.
+
+  * **Explicit Wait Management**: Centralized synchronization logic to ensure test stability across different browser speeds and network conditions.
 
 ## Project Goal:
 
